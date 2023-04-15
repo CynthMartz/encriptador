@@ -34,7 +34,7 @@ Las "llaves" de encriptación que se utilizaron son las siguiente:
 
 ---
 
-[**Ir a la página del encriptador** ✌]()
+[**Ir a la página del encriptador**]()
 
-[**Ir a la maquetización Figma del diseño** ✌](https://www.figma.com)
+[**Ir a la maquetización Figma del diseño**](https://www.figma.com)
 ---
