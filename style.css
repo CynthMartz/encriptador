@@ -16,9 +16,10 @@
 
 body{
     background-image: url(./img/background-2.jpeg);
-    background-position: center ;
+    background-position: center center;/* imagen de fondo centrada, vertical y horizontalmente */
     background-repeat: no-repeat;
     background-size: cover;/*tambien se usa cover para que agarre el total de la pantalla*/
+    background-attachment: fixed;/*La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido*/
     font-family:'Schwitfy';
     font-size: 24px;
     line-height: 150%;
