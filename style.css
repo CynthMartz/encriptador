@@ -1,0 +1,378 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --main-color: #a6eee6ff;
+    --main-color1: #b7e4f9ff;
+    --complementary:#fafafa;
+} 
+
+@font-face {
+    font-family:'Schwitfy' ;
+    src: url(./assets/fonts/get_schwifty.ttf);
+    font-style:normal;
+    font-weight: normal;
+}
+
+body{
+    background-image: url(./img/fondo1.jpeg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;/*tambien se usa cover para que agarre el total de la pantalla*/
+    font-family:'Schwitfy';
+    font-size: 24px;
+    line-height: 150%;
+    position: relative;
+    padding-bottom: 4em;
+    min-height: 100vh;
+}
+
+a{
+    text-decoration: none;
+}
+
+h2, button{
+    font-family:'Schwitfy';
+    color: var(--main-color1);
+}
+
+textarea{
+    font-family: 'Syne Mono';
+}
+
+.container{
+    margin: 0 ;
+    max-width: 80%;
+}
+
+/*Logo*/
+#logo_alura{
+    font-family: fantasy;
+    font-weight:700;
+}
+
+.logo__container{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.logo__container a {
+    color: var(--main-color);
+}
+
+/*Titulo*/
+.titulo__encriptador--container{
+    display: flex;
+    justify-content: center;
+}
+
+/*Texto a encriptar*/
+
+.titulo__advertencia--container{
+    display: flex;
+    height: 80px;
+}
+
+.titulo__advertencia{
+    color: var(--main-color);
+    display: flex;
+    align-self: center;
+}
+
+/*Textarea*/
+
+.textarea__diseno{
+    box-sizing: border-box;
+    text-align: center;
+    color:var(--main-color1);
+    font-size: .7em;
+    padding: 1rem;
+    margin: 0 auto;
+    background-color:black;
+    border: 2px solid white;
+    box-shadow: inset 0 0 10px yellow, 0 0 20px yellow;
+    border-radius: 24px;
+    text-transform: lowercase;
+}
+
+.textarea__mensaje{
+    box-sizing: border-box;
+    text-align: center;
+    color:var(--main-color1);
+    font-size: .7em;
+    padding: 1rem;
+    margin: 0 auto;
+    background-color:black;
+    border: 2px solid white;
+    box-shadow: inset 0 0 10px yellow, 0 0 20px yellow;
+    border-radius: 24px;
+    text-transform: lowercase;
+    margin-bottom: 2rem;
+}
+::placeholder{color:var(--main-color1)}
+    .text-area:focus{
+        outline: none;
+    }
+
+    /*Botones*/
+
+.botones_encripatadores{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn__container{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn__imagen{
+    width: 8vw;
+}
+
+button{
+    letter-spacing: 3px;
+    text-shadow: 0 0 5px yellow,  0 0 15px yellow;
+    text-align: center;
+    padding: 20px;
+    border-radius: 25px;
+    background: black;
+    border: 1px solid var(--main-color1);
+    box-shadow: inset 0 0 10px yellow, 0 0 20px yellow;
+    cursor: pointer;
+}
+
+button:hover{
+    cursor: pointer;
+    border: 2px solid yellow;
+    scale: 1.1;
+}
+
+button:active{
+    background-color:rgba(0, 255, 234, 0.2);
+    border:2px solid var(--main-color);
+    color: white;
+}
+
+
+/*Mensaje*/
+
+.mensaje:focus{
+    outline: none;
+}
+
+/*Footer*/
+
+.footer__container{
+    display: flex;
+    /*column en tablet y mobile*/
+    position: absolute;
+    align-items: center;
+    width: 98%;
+    bottom: 0;
+}
+.footer a{
+    height: 1em;
+    width: 1em;
+}
+
+a img:hover{
+    transition: all .5s;
+    scale: 1.3;
+    
+}
+
+.copy{
+    color: var(--main-color);
+    letter-spacing: 3px;
+    padding-left: 1rem;
+}
+
+/***********************************************/
+
+/*MOBILE*/
+@media screen and (min-width:0) {
+    /*Header -logo*/
+    header{
+        height: 50px;
+        width: 100%;
+        position: relative;
+    }
+    .container{
+        margin: 0;
+        max-width: 100%;
+        padding-left: 2%;
+        }
+    .logo__container .logo{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    /*Titulo*/
+    .titulo__encriptador--container{
+        height: 100px;
+        padding-top: 0;
+    }
+    /*Contenido-encriptador*/
+    .encriptador__container{
+        padding-top: 1rem;
+        height: 200px;
+    }
+    /*titulo__advertencia*/
+    .titulo__advertencia{
+        font-size: 1rem;
+    }
+    /*textarea__diseno*/
+    .textarea__diseno{
+        width: 98%;
+    }
+    /*Botones*/
+    .botones_encripatadores{
+        width: 100%;
+        padding-top: 1.5rem;
+    }
+    button{
+        width: 120px;
+        font-size: 0.5rem; 
+    }
+    /*Textarea mensaje*/
+    .textarea__mensaje{
+        width: 98%;
+        height: 300px;
+    }
+    .textarea__container{
+        padding-top: 3rem;
+    }
+    /*Footer*/
+    .footer__container{
+        flex-direction: column;
+        justify-content: flex-end;
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+/***********************************************/
+
+/*TABLET*/
+@media screen and (min-width:768px) {
+    /*Header -logo*/
+    header{
+        height: 75px;
+        width: 100%;
+        position: relative;
+    }
+    .container{
+        margin: 0;
+        max-width: 100%;
+        padding-left: 4%;
+        padding-right: 4%;
+        }
+    .logo__container .logo{
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    /*Titulo*/
+    .titulo__encriptador--container{
+        height: 150px;
+        padding-top: 0;
+    }
+    /*Contenido-encriptador*/
+    .encriptador__container{
+        padding-top: 2rem;
+        height: 300px;
+    }
+    /*titulo__advertencia*/
+    .titulo__advertencia{
+        font-size: 2rem;
+    }
+    /*textarea__diseno*/
+    .textarea__diseno{
+        width: 100%;
+    }
+    /*Botones*/
+    .botones_encripatadores{
+        width: 100%;
+        padding-top: 2rem;
+    }
+    button{
+        width: 180px;
+        font-size: 1rem;
+    }
+    /*Textarea mensaje*/
+    .textarea__mensaje{
+        width: 100%;
+        height: 500px;
+    }
+    .textarea__container{
+        padding-top: 4rem;
+    }
+    /*Footer*/
+    .footer__container{
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        bottom: 0;
+    }
+    
+}
+
+/***********************************************/
+
+/*DESKTOP*/
+
+@media screen and (min-width:992px) {
+    /*Header -logo*/
+    header{
+        height: 100px;
+        width: 100%;
+        position: relative;
+    }
+    .logo__container .logo{
+        font-size: 4rem;
+        font-weight: bold;
+    }
+    /*Titulo*/
+    .titulo__encriptador--container{
+        height: 200px;
+        padding-top: 0;
+    }
+    /*Contenido-encriptador*/
+    .encriptador__container{
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 5rem;
+        height: 500px;
+    }
+    /*titulo__advertencia*/
+    .titulo__advertencia{
+        font-size: 3rem;
+    }
+    /*textarea__diseno*/
+    .textarea__diseno{
+        width: 75%;
+        height: 60%;
+    }
+    /*Botones*/
+    .botones_encripatadores{
+        width: 75%;
+        padding-top: 3rem;
+    }
+    button{
+        width: 200px;
+        font-size: 1rem; 
+    }
+    /*Textarea mensaje*/
+    .textarea__mensaje{
+        width: 85%;
+        height: 97%;
+    }
+    /*Footer*/
+    .footer__container{
+        flex-direction: row;
+        justify-content: flex-end;
+        position: absolute;
+        bottom: 0;
+    }
+}
