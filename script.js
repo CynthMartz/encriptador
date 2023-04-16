@@ -56,7 +56,7 @@ function desencriptar(stringDesencriptado){
 }
 //boton copiar
 
-btnCopy.addEventListener("click", copiar);
+botonCopiar.addEventListener("click", copiar);
 
 function copiar(){
     if(mensajeEncriptado.value != ""){
