@@ -16,14 +16,14 @@
 
 body{
     background-image: url(./img/fondo1.jpeg);
-    background-position: center top;
+    background-position: center ;
     background-repeat: no-repeat;
     background-size: cover;/*tambien se usa cover para que agarre el total de la pantalla*/
     font-family:'Schwitfy';
     font-size: 24px;
     line-height: 150%;
     position: relative;
-    padding-bottom: 4em;
+    padding-bottom: 4rem;
     min-height: 100vh;
 }
 
