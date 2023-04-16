@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./img/rick-and-morty-icon-4.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+
+<body>
+    <!--Header - logo -->
+    <header class="container">
+        <nav class="logo__container">
+            <h1><a class="logo" id="logo_alura" href="https://www.aluracursos.com/">a</a></h1>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!--Titulo encriptar -->
+        <section class="titulo__encriptador--container">
+            <img class="titulo__encriptador" src="./img/logo.png" alt="Encriptador">
+        </section>
+
+        <!--Texto a encriptar -->
+        <section class="encriptador__container">
+            <div >
+                <div class="titulo__advertencia--container">
+                    <img src="./img/advertencia.png" alt="advertencia">
+                    <h2 class="titulo__advertencia"> Solo letras minúsculas y sin acentos.</h2>
+                </div>
+                <div>
+                    <textarea class="text-area textarea__diseno"id="ingresarMensaje" type="text" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+                </div>
+                <!--Button de Encriptar y Desencriptar -->
+                <div class="botones_encripatadores">
+                    <div class="btn__container">
+                        <img class="btn__imagen" src="./img/gun.png" alt="pistola">
+                        <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    </div>
+                    <div class="btn__container">
+                        <img class="btn__imagen" src="./img/gun.png" alt="pistola">
+                        <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Mensaje encripatado-->
+            <div class="textarea__container">
+                <textarea class="mensaje textarea__mensaje" id="mensajeEncriptado" cols="30" rows="10" placeholder="No se encontro ningún mensaje"></textarea>
+                <button class="copiar" id="botonCopiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer__container container">
+        <!--Social media del autor-->
+        <nav class="footer">
+            <a class="iconos" href="https://www.linkedin.com/in/martinez-cynthia-/"><img src="./img/email.png" alt="linkedin"></a>
+            <a href="https://github.com/CynthMartz"><img src="./img/Instagram.png" alt="github"></a>
+        </nav>
+        <p class="copy">&copy; Cynthia Martz - 2023</p>
+    </footer>
+    <script src="/script.js"></script>
+</body>
+</html>
