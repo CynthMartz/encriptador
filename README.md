@@ -34,7 +34,7 @@ Las "llaves" de encriptación que se utilizaron son las siguiente:
 
 ---
 
-[**Ir a la página del encriptador**]()
+[**Ir a la página del encriptador**](https://cynthmartz.github.io/encriptador/)
 
-[**Ir a la maquetización Figma del diseño**](https://www.figma.com)
+[**Ir a la maquetización Figma del diseño**](https://www.figma.com/file/YaBfgEkInWBYcnQSrQfNpa/Encriptador?node-id=0-1&t=tPD0GO15bP3GbgMe-0)
 ---
