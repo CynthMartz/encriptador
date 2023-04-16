@@ -15,7 +15,7 @@
 }
 
 body{
-    background-image: url(./img/fondo1.jpeg);
+    background-image: url(./img/background-2.jpeg);
     background-position: center ;
     background-repeat: no-repeat;
     background-size: cover;/*tambien se usa cover para que agarre el total de la pantalla*/
